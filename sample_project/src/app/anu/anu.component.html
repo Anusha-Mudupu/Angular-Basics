@@ -1,0 +1,71 @@
+<!-- <h1>my birthday is:{{birthday|date:"dd/mm/yy"}}</h1>
+<h1>my name is:{{name}}</h1>
+<button (click)="updatename()">updatename</button>
+<h1>cout is:{{count}}</h1>
+<button (click)="increment()">increment</button>
+<button (click)="decrement()">decrement</button> -->
+
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>id</th>
+            <th>email</th>
+            <th>action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userlist">
+            <td>{{user.name}}</td>
+            <td>{{user.id}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.action}} <button (click)="person(user)"></button>Edit</td>
+
+
+
+        </tr>
+    </tbody>
+</table> -->
+<!-- <a routerLink="/anu/raji" routerLinkActive="Active">go to raji component</a> -->
+<!-- <h1>my userId is:{{userId}}</h1> -->
+<!-- <h1>my id is:{{user}}</h1> -->
+<!-- <h1>my title is:{{title}}</h1> -->
+<!-- <h1>my body is:{{body}}</h1> -->
+<!-- <table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let log of loglist">
+            <td>{{log.id}}</td>
+            <td>{{log.title}}</td>
+        </tr>
+    </tbody>
+</table> -->
+<!-- <h1>this is anu component</h1>
+<button type="button" (click)="first()">first</button> -->
+<!-- <a routerLink="/anu/raji" routerLinkActive="Active">go to raji component</a> -->
+<!-- <h1>my name is:{{name}}</h1>
+<button type="button" (click)="update()">update</button>
+<br>
+<h1> count is:{{count}}</h1>
+<button type="button" (click)="increment()">increment</button>
+<button type="button" (click)="decrement()">decrement</button>
+<br>
+<h1>enter name is:{{name1}}</h1> -->
+<!-- <input type="text" (click)="nameFun($event)" > -->
+<!-- <button type="button"(click)="nameFun($event)">name</button> -->
+
+<router-outlet></router-outlet>
+<input type="text" [(ngModel)]="name">
+ <h1>this is anu component</h1>
+<input [(ngModel)]="name"  #contorl="ngModel" >
+<p>my name is :{{name}} is{{getNameCount()}}</p>
+<p>valid: {{contorl.valid}}</p>
+<!-- <button (click)="setValue()">setvalue</button> -->
+<button type="button">setvalue</button>
+<!-- <app-raji></app-raji> -->
