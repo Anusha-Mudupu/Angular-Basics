@@ -1,0 +1,59 @@
+ <!-- ngModel is use for forms -->
+<input type="text" [(ngModel)]="name">  
+<p>my name is:{{name}}</p>
+
+
+<!-- string interpolation -->
+ <p>my project name is :{{officeName}} my office id:{{officeId}} </p>  
+<p>my project name is :{{officeName}} my office id: {{getOfficeId()}} </p>
+  
+
+<!-- Property Binding -->
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>    
+ <p>{{allowNewServer}}</p>                 
+<p [innerText]="allowNewServer"></p> 
+
+
+<!-- Event Binding -->
+<input type="text" [(ngModel)]="name">  
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServer()">button</button>   //Event Binding -->
+  <p>{{allowServer}}</p>
+
+ 
+ <!-- button will be enbled after we write the data in  inputbox -->
+ <input type="text" [(ngModel)]="name"> 
+ <p>my name is:{{name}}</p> 
+ <button class="btn btn-primary" [disabled]="name === ''" (click)="name = ''">submit</button>  
+<br>
+<br>
+
+
+ <!-- *ngIf and else condition -->
+  <input type="text" [(ngModel)]="name">  
+<button class="btn btn-primary" (click)="onServer()">button</button>
+  <p *ngIf="server ,else elseblock">server was created, server name is{{name}}</p>
+ <ng-template #elseblock><p>server was not created</p></ng-template>
+
+ <!-- *ngFor condition -->
+ <table>
+    <thead>
+        <tr>
+            <th>EmployeeName</th> &nbsp;&nbsp;
+            <th>EmployeeId</th>  &nbsp;&nbsp;
+            <th>ProjectName</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let user of userlist">
+                <td>{{user.EmployeeName}}</td> &nbsp;&nbsp;
+                <td>{{user.EmployeeId}}</td> &nbsp;&nbsp;
+                <td>{{user.ProjectName}}</td>
+            </tr>
+        </tbody>
+    
+ </table>
+
+<!-- <p [ngStyle]="{backgroundColor:getColor()}">{{serverName}} with Id:{{severId}}is{{getServerStatus()}}
+</p> -->
+
+

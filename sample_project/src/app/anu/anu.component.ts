@@ -10,6 +10,7 @@ import { ProductlistService } from '../productlist.service';
 export class AnuComponent implements OnInit {
   name:any="anu";
   namecount:number=10;
+  allowNewServer:boolean=false;
   // name1:any;
  
   //  birthday:Date=new Date()
@@ -28,11 +29,15 @@ export class AnuComponent implements OnInit {
   //  }]
   loglist:any=[];
    
-  constructor(
-    private router:Router
+  constructor()
+    // private router:Router
     // private route:ActivatedRoute
     // private productlist:ProductlistService
-    ) { }
+  {
+    setTimeout(() => {
+      this.allowNewServer=true;
+    }, 5000);
+   }
 
   ngOnInit(): void {
   
@@ -71,4 +76,5 @@ export class AnuComponent implements OnInit {
   getNameCount(){
     return this.namecount;
   }
+  
 }
