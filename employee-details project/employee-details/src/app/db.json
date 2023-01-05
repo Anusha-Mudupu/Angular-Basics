@@ -1,0 +1,28 @@
+{
+"student":{	
+	"id": 1,
+	"studentName": "Anu",
+	"markLists": [{
+			"year": "2020",
+			"marks": [{
+				"subject": "Html",
+				"marks": 80
+			}]
+		},
+		{
+			"year": "2021",
+			"marks": [{
+				"subject": "Css",
+				"marks": 85
+			}]
+		},
+		{
+			"year": "2021",
+			"marks": [{
+				"subject": "Angular",
+				"marks": 86
+			}]
+		}
+	]
+	}
+}

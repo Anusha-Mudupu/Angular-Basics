@@ -1,0 +1,27 @@
+/* student = [{
+    "id": 1,
+    "studentName": "Anu",
+    "year2020": [{
+      "subject": "c",
+      "marks": 85,
+      
+      "year2021": [{
+        "subject": "java",
+        "marks": 85,
+
+        "year2022": [{
+          "subject": "python",
+          "marks": 85
+        }]
+
+      }]
+    }]
+  }] */
+  .h{
+    color:green;
+    
+  }
+  .j{
+   width: 900px;
+   margin-left: 20px;
+  }

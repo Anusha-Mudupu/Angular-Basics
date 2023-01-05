@@ -1,0 +1,37 @@
+h2{
+    position: relative;
+    margin-left: 500px;
+    color:rgb(74, 38, 192)
+}
+#person{
+   margin-left:600px;
+   margin-top: 35px;
+   margin-bottom: 10px;
+    
+}
+h3{
+    position: relative;
+   
+    margin-bottom: 30px;
+  
+}
+body{
+    background-color:white;
+    box-shadow: 5px 5px 5px 5px;
+    height: 800px;
+    width: 800px;
+    margin-left: 400px;
+}
+#header{
+    position: relative;
+    margin-left:10px;
+   
+}
+.search{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#icon{
+    position:absolute;
+    margin-right: 200px;
+}

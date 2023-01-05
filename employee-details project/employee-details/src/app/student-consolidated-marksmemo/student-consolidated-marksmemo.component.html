@@ -1,0 +1,29 @@
+<h2 class="text-danger">student-consolidated-marksmemo</h2>
+
+<div class="container-flud" *ngFor="let stu of students">
+    <div class="row">
+        <div class="col-6">
+          
+   <h3>ID:{{stu.id}}</h3>
+        </div>
+    <div class="col-6">
+       
+   <h3>StudentName:{{stu.studentName}}</h3>
+    </div>
+         </div>
+    <table class="table" *ngFor="let ya of stu.markLists">
+        <thead>
+             <h3>student marklist year :{{ya.year}}</h3>
+       </thead>
+       <tbody>
+        <tr *ngFor="let mar of ya.marks">
+            
+            <div>Subject:{{mar.subject}}</div>
+            
+            <div>Marks:{{mar.marks}}</div>
+        </tr>
+       </tbody>
+    
+    </table>
+         
+</div>

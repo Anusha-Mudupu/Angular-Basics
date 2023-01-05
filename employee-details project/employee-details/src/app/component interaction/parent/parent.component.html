@@ -1,0 +1,5 @@
+<!-- <app-child [formParent]="parentMsg"></app-child> -->
+<h1>parent component</h1>
+<!-- parent message: -->
+{{cdata}}
+<app-child (customeve)="cdata=$event"></app-child>

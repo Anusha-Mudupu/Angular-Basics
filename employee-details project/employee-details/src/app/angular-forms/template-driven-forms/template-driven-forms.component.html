@@ -1,0 +1,63 @@
+<div class="col-md-8 offset-md-3">
+<div class="container-flud">
+    <h2>Template Driven Forms</h2>
+    <br>
+    <form #myForm="ngForm">
+        <div class="col-6">
+            <div class="form-group">
+                <input type="text" class="form-control" [class.is-invalid]="name.invalid && name.touched" placeholder="Username"
+                    aria-label="Username" aria-describedby="basic-addon1" name="Username" #name="ngModel"
+                    [(ngModel)]="templateForm.Username" required>
+                     <small class="text-danger" [class.d-none]="name.valid || name.untouched">Username is required</small>
+            </div>&nbsp;&nbsp;
+            <div class="form-group">
+                <input type="email" class="form-control"  [class.is-invalid]="Email.invalid && Email.touched"placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" aria-label="Email"
+                    aria-describedby="basic-addon1" name="Email"  #Email="ngModel" [(ngModel)]="templateForm.Email" required>
+                    <small class="text-danger" [class.d-none]="Email.valid || Email.untouched">Email is required</small>
+            </div>&nbsp;&nbsp;
+            <div class="form-group">
+                <input type="number" class="form-control"  [class.is-invalid]="phone.invalid && phone.touched" placeholder="Mobile Number" aria-label="phone"
+                    aria-describedby="basic-addon1" name="phone" #phone="ngModel" [(ngModel)]="templateForm.phone" required>
+                    <small class="text-danger" [class.d-none]="phone.valid || phone.untouched">phone Number is required</small>
+            </div>&nbsp;
+            <div>select gender:</div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+                    name="Male" [(ngModel)]="templateForm.gender">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+                    name="Female" [(ngModel)]="templateForm.gender">
+                <label class="form-check-label" for="inlineRadio2">Female</label><br>
+            </div>
+            <br>
+            <div>
+            <div>Select One: </div>
+            <select class="form-select" aria-label="Default select example" name="course"
+               [(ngModel)]="templateForm.course" required>&nbsp;&nbsp;
+                <!-- <option selected>choose......</option> -->
+                <option *ngFor="let x of course">{{x}}</option>
+            </select>
+            </div>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="remember" [class.is-invalid]="remember.invalid && remember.touched"
+                #remember="ngModel"   [(ngModel)]="templateForm.remember" required>
+                <label class="form-check-label" for="flexCheckDefault" >
+                    remember me
+                </label>
+            </div>
+            <div>
+                <label>Date of birth:</label>
+                <input type="date">
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <div>{{myForm.value | json}}</div>
+</div>
+</div>
