@@ -20,6 +20,9 @@ import { TestPipe } from './test.pipe';
 import { ParentComponent } from './component interaction/parent/parent.component';
 import { ChildComponent } from './component interaction/child/child.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { PracticeWebpageComponent } from './practice-webpage/practice-webpage.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     TestPipe,
     ParentComponent,
     ChildComponent,
+    PracticeWebpageComponent,
+ 
    
   ],
   imports: [
@@ -45,7 +50,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     FormsModule,
     ReactiveFormsModule,
     Ng2SearchPipeModule,
-    // MatSlideToggleModule
+    // MatSlideToggleModule,
+    NgxPaginationModule
   ],
   providers: [EmployeeDetailsService,RouteGuardGuard],
   bootstrap: [AppComponent]

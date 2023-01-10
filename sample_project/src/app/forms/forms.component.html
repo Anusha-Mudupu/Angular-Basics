@@ -1,0 +1,29 @@
+<p>forms works!</p>
+<form [formGroup]="reactiveform">
+    <div class="form-group">
+     <label>username</label>
+     <input class="form-control" formControlName="username">
+     <div *ngIf="reactiveform.controls['username'].touched &&reactiveform.controls['username'] ?.['errors']">
+     <span *ngIf="f['username'].getError('required')!=null" class="errormessage">enter username</span>
+     <span *ngIf="f['username'].getError('minlength')!=null" class="errormessage">username must should be 6 letters</span>
+    </div>
+    </div>
+    <div class="form-group">
+        <label>password</label>
+        <input class="form-control" formControlName="password">
+        <div *ngIf="reactiveform.controls['password'].touched &&reactiveform.controls['password'] ?.['errors']">
+        <span *ngIf="f['password'].getError('required')!=null" class="errormessage">password is required</span>
+       
+       </div>
+    </div>
+       <div class="form-group">
+        <label>confirm password</label>
+        <input class="form-control" formControlName="cpassword">
+        <div *ngIf="reactiveform.controls['cpassword'].touched &&reactiveform.controls['cpassword'] ?.['errors']">
+        <span *ngIf="f['cpassword'].getError('required')!=null" class="errormessage">confirm password is required</span>
+        <span *ngIf="f['cpassword'].getError('mustMatch')!=null" class="errormessage">password mismatched</span>
+       </div>
+    </div>
+
+       <button (click)="submit()" >submit</button>
+</form>

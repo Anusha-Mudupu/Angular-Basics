@@ -9,6 +9,8 @@ import { ParentComponent } from './component interaction/parent/parent.component
 import { CustompipeTestComponent } from './custompipe-test/custompipe-test.component';
 import { GetEmployeeDetailsComponent } from './get-employee-details/get-employee-details.component';
 
+import { PracticeWebpageComponent } from './practice-webpage/practice-webpage.component';
+
 import { RouteGuardGuard } from './route-guard.guard';
 import { RouteGuardsComponent } from './route-guards/route-guards.component';
 import { StudentConsolidatedMarksmemoComponent } from './student-consolidated-marksmemo/student-consolidated-marksmemo.component';
@@ -17,6 +19,7 @@ import { ViewEmployeeDetailsComponent } from './view-employee-details/view-emplo
 
 const routes: Routes = [
   
+  {path:'practicewebpage',component:PracticeWebpageComponent},
   {
     path: 'routeGuards', component: RouteGuardsComponent,
     canActivate: [RouteGuardGuard]

@@ -29,10 +29,11 @@ export class AnuComponent implements OnInit {
   //  }]
   loglist:any=[];
    
-  constructor()
-    // private router:Router
-    // private route:ActivatedRoute
+  constructor(private router:Router,private route:ActivatedRoute)
+   // private router:Router
+   // private route:ActivatedRoute
     // private productlist:ProductlistService
+  
   {
     setTimeout(() => {
       this.allowNewServer=true;
@@ -76,5 +77,10 @@ export class AnuComponent implements OnInit {
   getNameCount(){
     return this.namecount;
   }
-  
+  goToOne(){
+    this.router.navigate(['one'],{relativeTo:this.route})          //relative navigation
+  }
+  goToTwo(){
+    this.router.navigate(['two'],{relativeTo:this.route})          // relative navigation
+  }
 }

@@ -1,0 +1,29 @@
+<!-- <p>subject works!</p>
+<form regForm="formGroup">
+    <label>title:</label>
+    <input type="text"  class="form-control">
+    <label>duration</label>
+    <input type="text"  class="form-control">
+    <label>id</label>
+    <input type="number"  class="form-control">
+    <button type="button" (click)="submit()"></button>
+</form> -->
+<h1>Student deatils</h1>
+<div *ngFor="let stu of student">
+   
+    <p>StudentId:{{stu.id}} </p>
+    
+    <p>StudentName:{{stu.name}}</p>
+<div *ngFor="let qual of stu.qualification">
+      
+        <p> Title:{{qual.title}}</p>
+        <td>year:{{qual.year}}</td>
+        <div *ngFor="let sub of qual.subject">
+           
+            <p> title:{{sub.title}}</p>
+            <p> duration:{{sub.duration}}</p>
+           
+        </div>
+        <!-- <button (click)="studentDetails(student.id)" class="btn btn-primary">view</button> -->
+    </div>
+    

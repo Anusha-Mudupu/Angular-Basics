@@ -1,0 +1,21 @@
+{
+    "subject":
+          [
+       {
+   "language":"c",
+    "marks":85,
+      "year":2020
+   },
+   {
+   "language":"java",
+     "marks":8,
+      "year":2021
+   },
+   {
+   "language":"python",
+     "marks":85,
+      "year":2026  
+   }
+   
+   ]
+   }

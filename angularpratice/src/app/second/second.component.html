@@ -1,0 +1,10 @@
+<p>second works!</p>
+ <!-- <ul >
+    <li (click)="onSelect(department)" *ngFor="let department of departments">
+        {{department.id}}.{{department.name}}</li>
+ </ul> -->
+<app-first [formParent]="parentMsg"></app-first>
+<h3>you are selected id is :{{courseId}}</h3>
+<button (click)="toPrevious()">previous</button>
+<button (click)="toNext()">Next</button>
+<button (click)="goBack()">Back</button>

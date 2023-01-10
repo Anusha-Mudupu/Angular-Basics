@@ -1,0 +1,17 @@
+<p>one works!</p>
+<a routerLink="/one/two" routerLinkActive="Active">go to two  component</a>
+
+        <table *ngFor="let user of users">
+            <tr>
+            <td>{{user.name}}</td>
+        </tr>
+        <tr *ngFor="let qual of user. qualification">
+            <td>{{qual.title}}</td>
+            <td>{{qual.year}}</td>
+         <div  *ngFor="let sub of qual.subject">
+            <p>{{sub. title}}</p>
+            <p>{{sub. duration}}</p>
+
+         </div>
+        </tr>
+   
