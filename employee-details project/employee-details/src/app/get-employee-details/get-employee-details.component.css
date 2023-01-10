@@ -18,7 +18,7 @@ h3{
 body{
     background-color:white;
     box-shadow: 5px 5px 5px 5px;
-    height: 800px;
+    height: auto;
     width: 800px;
     margin-left: 400px;
 }
