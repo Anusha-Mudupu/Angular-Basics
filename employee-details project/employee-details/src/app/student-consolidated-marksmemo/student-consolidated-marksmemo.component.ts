@@ -8,19 +8,18 @@ import { StudentConsolidatedService } from '../student-consolidated.service';
   styleUrls: ['./student-consolidated-marksmemo.component.css']
 })
 export class StudentConsolidatedMarksmemoComponent implements OnInit {
-  students: StudentConsolidated[]=[];
-  constructor(private studentconsoildated:StudentConsolidatedService) { }
+  students: StudentConsolidated[] = [];
+  constructor(private studentconsoildated: StudentConsolidatedService) { }
 
   ngOnInit(): void {
     this.test();
   }
-  test(){
-    this.studentconsoildated.getJsonUrl().subscribe((data)=>{
+  test() {
+    this.studentconsoildated.getJsonUrl().subscribe((data) => {
       this.students = data;
-     
-     console.log(data);
-     
- })
+      console.log(data);
+
+    })
   }
 
 }

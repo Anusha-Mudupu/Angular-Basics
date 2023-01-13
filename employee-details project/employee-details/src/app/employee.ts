@@ -2,5 +2,7 @@ export class Employee {
     "id":number;
     "firstName":string;
     "lastName":string;
-    "emailId":string;
-}
+    "phoneNumber":string; //not defined
+    "Email":string  // not defined
+    "emailId":string
+ }

@@ -12,4 +12,7 @@ export class StudentConsolidatedService {
  getJsonUrl():Observable<any>{
   return this.http.get<StudentConsolidated[]>(this.jsonUrl)
  }
+ deleteStudentDetailsJsonServer(id:number):Observable<object>{
+  return this.http.delete(`${this.jsonUrl}/${id}`)
+}
 }

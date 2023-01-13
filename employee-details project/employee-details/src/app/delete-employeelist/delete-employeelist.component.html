@@ -1,0 +1,36 @@
+<p>delete-employeelist works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th> id </th>
+            <th> firstName </th>
+            <th> lastName </th>
+            <th> phoneNumber </th>
+            <th> Email </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.phoneNumber}}</td>
+            <td>{{employee.Email}}</td>
+
+            
+            <td><button type="button" class="btn btn-primary" (click)="deleteEmployeeList(employee.id)">Delete</button></td>
+
+        </tr>
+        <tr *ngFor="let student of students">
+            <td>{{student.id}}</td>
+            <td>{{student.firstName}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.phoneNumber}}</td>
+            <td>{{student.Email}}</td>
+            <td><button type="button" class="btn btn-primary" (click)=" deleteStudentList(student.id)">Delete</button></td>
+
+        </tr>
+    </tbody>
+
+</table>

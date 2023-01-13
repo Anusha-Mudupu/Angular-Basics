@@ -1,0 +1,48 @@
+{
+  "empolyeeList": [
+    {
+      "id": 5,
+      "firstName": "Amulya",
+      "lastName": "abcd",
+      "phoneNumber": 1234567890,
+      "Email": "amulya@gmail.com"
+    },
+    {
+      "id": 6,
+      "firstName": "Anu",
+      "lastName": "mudupu",
+      "phoneNumber": 1234567890,
+      "Email": "anu@gmail.com"
+    },
+    {
+      "id": 7,
+      "firstName": "karuna",
+      "lastName": "jadi",
+      "phoneNumber": 1234567890,
+      "Email": "karuna@gmail.com"
+    }
+  ],
+  "students": [
+    {
+      "id": 2,
+      "firstName": "Anu",
+      "lastName": "abcd",
+      "phoneNumber": 1234567890,
+      "Email": "anu@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "raji",
+      "lastName": "abcd",
+      "phoneNumber": 1234567890,
+      "Email": "raji@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstName": "appu",
+      "lastName": "abcd",
+      "phoneNumber": 1234567890,
+      "Email": "appu@gmail.com"
+    }
+  ]
+}

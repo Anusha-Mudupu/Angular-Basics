@@ -7,6 +7,7 @@ import { Employee } from './employee';
   providedIn: 'root'
 })
 export class EmployeeDetailsService {
+  jsonUrl='http://localhost:3000/empolyeeList';
   getUrl = 'http://localhost:9090/employees';
   addUrl = 'http://localhost:9090/add';
   updateURL = 'http://localhost:9090/update';
@@ -28,5 +29,11 @@ export class EmployeeDetailsService {
   deleteEmployeeDetails(id: number): Observable<object> {
     return this.HttpClient.delete(`${this.deleteURL}/${id}`)
 
+  }
+  getEmployeeDetailsJsonServer(){
+    return this.HttpClient.get(this.jsonUrl);
+  }
+  deleteEmployeeDetailsJsonServer(id:number):Observable<object>{
+    return this.HttpClient.delete(`${this.jsonUrl}/${id}`)
   }
 }
